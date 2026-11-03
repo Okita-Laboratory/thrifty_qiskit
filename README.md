@@ -1,7 +1,6 @@
 # quantum_tools
 
-thrifty-qiskit (量子回路の呼び出し回数を減らす道具)
-causal-qiskit (量子因果推論の数値検証環境) のコード一式．
+thrifty-qiskit (量子回路の呼び出し回数を減らす道具)とcausal-qiskit (量子因果推論の数値検証環境) のコード
 
 ## 構成:
 
@@ -11,8 +10,6 @@ quantum_tools/
   causal_qiskit/    量子因果推論 L2/L3 (4 モジュール)
   experiments/      ベンチマークと図の生成 (7 スクリプト)
   tests/            pytest (20 ファイル, 314 件)
-  archive/          旧版 (変更せずに保存)
-  conftest.py       pytest がこのディレクトリを import の起点にするための空ファイル
 ```
 
 causal_qiskit は thrifty_qiskit の `gram_resampling` (EvalCache) と `shadows` (基底変換行列) を使う．逆向きの依存はありません．
